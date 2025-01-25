@@ -1,0 +1,101 @@
+@font-face {
+  font-family: "Inter";
+  src: url(files/assets/fonts/static/Inter-Bold.ttf);
+}
+:root {
+  --very-dark-blue: hsl(240, 100%, 5%);
+  --soft-red: hsl(5, 85%, 63%);
+  --soft-orange: hsl(35, 77%, 62%);
+  --dark-grayish-blue: hsl(236, 13%, 42%);
+}
+
+body {
+  padding: 6rem 8rem;
+}
+.web__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* I want to make this logo bolder 
+but the standard font doesnt let me*/
+.web__navigation__logo {
+  font-size: 3.2rem;
+  font-weight: 900;
+}
+.web__navigation__links {
+  list-style-type: none;
+  display: flex;
+  gap: 3rem;
+  color: var(--dark-grayish-blue);
+}
+.web__navigation__link:hover {
+  color: aqua;
+}
+.web__content {
+  display: flex;
+  margin-top: 2rem;
+}
+.web__content__left {
+  width: 70%;
+}
+.web__content__left__image {
+  height: 20.5rem;
+}
+.web__content__right {
+  background-color: var(--very-dark-blue);
+  width: 30%;
+  height: 34rem;
+  padding: 1rem;
+  color: hsl(37, 21%, 88%);
+  font-family: "Inter";
+}
+.web__content__right__title {
+  color: var(--soft-orange);
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.web__content__right__h4 {
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+  font-size: 18px;
+}
+.web__content__right__p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6rem;
+}
+hr {
+  margin: 2rem 0;
+  border: 1px solid rgb(34, 33, 33);
+}
+.web__content__left__description {
+  display: flex;
+  padding: 2rem 0;
+  font-family: "Inter";
+  width: 97%;
+}
+.web__content__left__description__h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+}
+.web__content__left__description__p__btn {
+  padding-left: 6rem;
+}
+.web__content__left__description__p {
+  color: var(--dark-grayish-blue);
+  font-weight: 500;
+  line-height: 1.8rem;
+  padding-right: 1rem;
+}
+.web__content__left__description__btn {
+  border: none;
+  background-color: var(--soft-red);
+  height: 3rem;
+  width: 12rem;
+  color: var(--very-dark-blue);
+  font-weight: 900;
+  letter-spacing: 4px;
+  margin-top: 2rem;
+}
