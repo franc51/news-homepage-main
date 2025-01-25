@@ -8,20 +8,49 @@
   --soft-orange: hsl(35, 77%, 62%);
   --dark-grayish-blue: hsl(236, 13%, 42%);
 }
-
+html {
+  overflow-x: hidden;
+}
 body {
   padding: 1rem 1rem;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 .web__navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.web__navigation__menutoggle {
+.web__mobile__navigation {
+  padding: 6rem 2rem;
+  font-family: "Inter";
+}
+.web__mobile__navigation__link {
+  list-style-type: none;
+  line-height: 3rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+  display: flex;
+  gap: 3rem;
+  color: var(--very-dark-blue);
+}
+.web__mobile__navigation__link:hover {
+  color: var(--soft-red);
+}
+.web__navigation__menutoggle__on {
   height: 17px;
   width: 17px;
   border: none;
   background-image: url(files/assets/images/icon-menu.svg);
+}
+.web__navigation__menutoggle__off {
+  height: 30px;
+  width: 30px;
+  border: none;
+  background-image: url(files/assets/images/icon-menu-close.svg);
+  position: absolute;
+  left: 12rem;
+  top: 1rem;
 }
 /* I want to make this logo bolder 
     but the standard font doesnt let me*/
@@ -41,14 +70,15 @@ body {
 }
 .web__content {
   display: flex;
-  margin-top: 2rem;
+  flex-direction: column;
+  margin-top: 1rem;
 }
 .web__content__left {
-  width: 70%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
-.web__content__left__image {
-  height: 11.5rem;
-}
+
 .web__content__right {
   background-color: var(--very-dark-blue);
   height: 22rem;
@@ -74,29 +104,31 @@ body {
   font-weight: 300;
 }
 hr {
-  margin: 0.5rem 0;
+  margin: 1.5rem 0;
   border: 1px solid rgb(34, 33, 33);
 }
 .web__content__left__description {
   display: flex;
+  flex-direction: column;
   padding: 1rem 0;
   font-family: "Inter";
   width: 93%;
 }
 .web__content__left__description__h1 {
-  font-size: 2.2rem;
+  font-size: 2.6rem;
   font-weight: 900;
-  width: 50rem;
+  width: 20rem;
 }
 .web__content__left__description__p__btn {
-  width: 60rem;
+  width: 100vw;
+  margin-top: 1rem;
 }
 .web__content__left__description__p {
   color: var(--dark-grayish-blue);
   font-weight: 500;
   line-height: 1.2rem;
-  padding-right: 1rem;
   font-size: 10px;
+  width: 20rem;
 }
 .web__content__left__description__btn {
   border: none;
@@ -116,20 +148,20 @@ hr {
 }
 .web__articles {
   display: flex;
+  flex-direction: column;
   gap: 2rem;
-
   margin-top: 1.5rem;
+  margin-bottom: 10rem;
 }
 .web__articles__single {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
 }
 .web__articles__single__image {
   width: 6rem;
 }
 .web__articles__single__description {
-  text-align: center;
+  padding-left: 1rem;
 }
 .web__articles__single__description__nr {
   font-size: 1.8rem;
@@ -146,4 +178,29 @@ hr {
 .web__articles__single__description__text {
   font-weight: 300;
   color: var(--dark-grayish-blue);
+}
+.menu__modal {
+  height: 100%;
+  width: 80vw;
+  background-color: white;
+  position: absolute;
+  left: 0; /* Align with the left edge of the viewport */
+  top: 0;
+  z-index: 2;
+  transform: translateX(100%); /* Start off-screen to the right */
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+}
+
+.showModal {
+  transform: translateX(8rem); /* Slide into view */
+  opacity: 1;
+  visibility: visible;
+}
+
+.hideModal {
+  transform: translateX(100%); /* Slide back out of view */
+  opacity: 0;
+  visibility: hidden;
 }
