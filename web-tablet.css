@@ -10,7 +10,7 @@
 }
 
 body {
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
 }
 .web__navigation {
   display: flex;
@@ -41,12 +41,11 @@ body {
   width: 70%;
 }
 .web__content__left__image {
-  height: 15rem;
+  height: 11.5rem;
 }
 .web__content__right {
   background-color: var(--very-dark-blue);
-  width: 35%;
-  height: 26rem;
+  height: 22rem;
   padding: 1rem;
   color: hsl(37, 21%, 88%);
   font-family: "Inter";
@@ -54,7 +53,6 @@ body {
 .web__content__right__title {
   color: var(--soft-orange);
   font-size: 1.5rem;
-  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 .web__content__right__h4 {
@@ -68,31 +66,31 @@ body {
 .web__content__right__p {
   font-size: 12px;
   font-weight: 300;
-  line-height: 1.6rem;
 }
 hr {
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   border: 1px solid rgb(34, 33, 33);
 }
 .web__content__left__description {
   display: flex;
-  padding: 2rem 0;
+  padding: 1rem 0;
   font-family: "Inter";
-  width: 98%;
+  width: 93%;
 }
 .web__content__left__description__h1 {
   font-size: 2.2rem;
   font-weight: 900;
+  width: 50rem;
 }
 .web__content__left__description__p__btn {
-  padding-left: 4rem;
+  width: 60rem;
 }
 .web__content__left__description__p {
   color: var(--dark-grayish-blue);
   font-weight: 500;
-  line-height: 1.3rem;
+  line-height: 1.2rem;
   padding-right: 1rem;
-  font-size: 12px;
+  font-size: 10px;
 }
 .web__content__left__description__btn {
   border: none;
@@ -109,4 +107,37 @@ hr {
   color: white;
   background-color: var(--very-dark-blue);
   cursor: pointer;
+}
+.web__articles {
+  display: flex;
+  gap: 2rem;
+
+  margin-top: 1.5rem;
+}
+.web__articles__single {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.web__articles__single__image {
+  width: 6rem;
+}
+.web__articles__single__description {
+  text-align: center;
+}
+.web__articles__single__description__nr {
+  font-size: 1.8rem;
+  color: var(--soft-red);
+}
+.web__articles__single__description__title {
+  font-weight: 1000;
+  color: var(--very-dark-blue);
+  margin: 0.5rem 0;
+}
+.web__articles__single__description__title:hover {
+  color: var(--soft-red);
+}
+.web__articles__single__description__text {
+  font-weight: 300;
+  color: var(--dark-grayish-blue);
 }

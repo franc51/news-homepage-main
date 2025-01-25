@@ -2,18 +2,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" media="(max-width:600px)" href="web-mobile.css" />
+    <link rel="stylesheet" media="(max-width:720px)" href="web-mobile.css" />
     <link
       rel="stylesheet"
-      media="(min-width: 601px) and (max-width: 1023px)"
+      media="(min-width: 720px) and (max-width: 1439px)"
       href="web-tablet.css"
     />
     <link
       rel="stylesheet"
-      media="(min-width:1024px) and (max-width:1439px)"
+      media="(min-width:1440px) and (max-width:1899px)"
       href="web-laptop.css"
     />
-    <link rel="stylesheet" media="(min-width:1440px)" href="web-desktop.css" />
+    <link rel="stylesheet" media="(min-width:1900px)" href="web-desktop.css" />
     <link rel="stylesheet" href="index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,12 +21,14 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <script src="index.js" defer></script>
     <title>Web 3</title>
   </head>
   <body>
     <section>
       <nav class="web__navigation">
         <h2 class="web__navigation__logo">W.</h2>
+        <button class="web__navigation__menutoggle"></button>
         <ul class="web__navigation__links">
           <li class="web__navigation__link">Home</li>
           <li class="web__navigation__link">New</li>
@@ -79,6 +81,58 @@
             Private funding by VC firms is down 50% YOY. We take a look at what
             that means.
           </p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="web__articles">
+        <div class="web__articles__single">
+          <img
+            class="web__articles__single__image"
+            src="files/assets/images/image-retro-pcs.jpg"
+            alt=""
+          />
+          <div class="web__articles__single__description">
+            <h5 class="web__articles__single__description__nr">01</h5>
+            <p class="web__articles__single__description__title">
+              Reviving Retro PCs
+            </p>
+            <p class="web__articles__single__description__text">
+              What happens when old PCs are given modern upgrades?
+            </p>
+          </div>
+        </div>
+        <div class="web__articles__single">
+          <img
+            class="web__articles__single__image"
+            src="files/assets/images/image-top-laptops.jpg"
+            alt=""
+          />
+          <div class="web__articles__single__description">
+            <h5 class="web__articles__single__description__nr">02</h5>
+            <p class="web__articles__single__description__title">
+              Top 10 Laptops of 2022
+            </p>
+            <p class="web__articles__single__description__text">
+              Our best picks for various needs and budgets.
+            </p>
+          </div>
+        </div>
+        <div class="web__articles__single">
+          <img
+            class="web__articles__single__image"
+            src="files/assets/images/image-gaming-growth.jpg"
+            alt=""
+          />
+          <div class="web__articles__single__description">
+            <h5 class="web__articles__single__description__nr">03</h5>
+            <p class="web__articles__single__description__title">
+              The Growth of Gaming
+            </p>
+            <p class="web__articles__single__description__text">
+              How the pandemic has sparked fresh opportunities.
+            </p>
+          </div>
         </div>
       </div>
     </section>
