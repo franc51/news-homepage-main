@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "Inter";
+  src: url(files/assets/fonts/static/Inter-Bold.ttf);
+}
+:root {
+  --very-dark-blue: hsl(240, 100%, 5%);
+  --soft-red: hsl(5, 85%, 63%);
+  --soft-orange: hsl(35, 77%, 62%);
+  --dark-grayish-blue: hsl(236, 13%, 42%);
+}
+
+body {
+  padding: 1rem 2rem;
+}
+.web__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* I want to make this logo bolder 
+  but the standard font doesnt let me*/
+.web__navigation__logo {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.web__navigation__links {
+  list-style-type: none;
+  display: flex;
+  gap: 3rem;
+  color: var(--dark-grayish-blue);
+}
+.web__navigation__link:hover {
+  color: var(--soft-orange);
+  cursor: pointer;
+}
+.web__content {
+  display: flex;
+  margin-top: 2rem;
+}
+.web__content__left {
+  width: 70%;
+}
+.web__content__left__image {
+  height: 15rem;
+}
+.web__content__right {
+  background-color: var(--very-dark-blue);
+  width: 35%;
+  height: 26rem;
+  padding: 1rem;
+  color: hsl(37, 21%, 88%);
+  font-family: "Inter";
+}
+.web__content__right__title {
+  color: var(--soft-orange);
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.web__content__right__h4 {
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+  font-size: 14px;
+}
+.web__content__right__h4:hover {
+  color: var(--soft-orange);
+}
+.web__content__right__p {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.6rem;
+}
+hr {
+  margin: 1rem 0;
+  border: 1px solid rgb(34, 33, 33);
+}
+.web__content__left__description {
+  display: flex;
+  padding: 2rem 0;
+  font-family: "Inter";
+  width: 98%;
+}
+.web__content__left__description__h1 {
+  font-size: 2.2rem;
+  font-weight: 900;
+}
+.web__content__left__description__p__btn {
+  padding-left: 4rem;
+}
+.web__content__left__description__p {
+  color: var(--dark-grayish-blue);
+  font-weight: 500;
+  line-height: 1.3rem;
+  padding-right: 1rem;
+  font-size: 12px;
+}
+.web__content__left__description__btn {
+  border: none;
+  background-color: var(--soft-red);
+  height: 2rem;
+  width: 8rem;
+  color: var(--very-dark-blue);
+  font-weight: 900;
+  letter-spacing: 4px;
+  margin-top: 1rem;
+  font-size: 10px;
+}
+.web__content__left__description__btn:hover {
+  color: white;
+  background-color: var(--very-dark-blue);
+  cursor: pointer;
+}
