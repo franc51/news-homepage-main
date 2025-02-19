@@ -139,3 +139,6 @@ hr {
   font-weight: 300;
   color: var(--dark-grayish-blue);
 }
+.web__mobile__navigation {
+  display: none;
+}
